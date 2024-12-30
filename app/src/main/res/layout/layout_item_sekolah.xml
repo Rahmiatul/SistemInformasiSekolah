@@ -1,0 +1,77 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Gambar Sekolah -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:id="@+id/imgSekolah"
+            android:src="@drawable/sma1"
+            android:scaleType="centerCrop" />
+
+        <!-- Nama Sekolah -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNamaSekolah"
+            android:layout_toEndOf="@+id/imgSekolah"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="Nama Sekolah"
+            android:textStyle="bold" />
+
+        <!-- No Telepon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoTelepon"
+            android:layout_below="@+id/tvNamaSekolah"
+            android:layout_toEndOf="@+id/imgSekolah"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:text="No. Telepon: 081374296444"
+            android:layout_marginTop="5dp" />
+
+        <!-- Akreditasi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAkreditasi"
+            android:layout_below="@id/tvNoTelepon"
+            android:layout_toEndOf="@id/imgSekolah"
+            android:layout_marginStart="10dp"
+            android:text="Akreditasi: A"
+            android:textStyle="bold"
+            android:textColor="@color/orange2"
+            android:layout_marginTop="5dp" />
+
+        <!-- Edit and Delete Icons -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="Delete"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

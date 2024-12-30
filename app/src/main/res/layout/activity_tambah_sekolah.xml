@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TambahSekolahActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/img">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Tambah Sekolah"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/orange2"
+                android:visibility="gone"
+                android:id="@+id/progressBar" />
+        </LinearLayout>
+
+        <!-- Konten Tambah Sekolah -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Gambar Sekolah -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gambar Sekolah"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/btnPilihGambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Gambar"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imgGambar"
+                android:src="@drawable/sma1"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:visibility="gone"
+                />
+
+            <!-- Nama Sekolah -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Sekolah"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/etNamaSekolah"
+                android:hint="Nama Sekolah"
+                android:background="@drawable/bg_edit_text"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp" />
+
+            <!-- Nomor Telepon -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/etNoTelepon"
+                android:hint="Nomor Telepon"
+                android:background="@drawable/bg_edit_text"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="phone" />
+
+            <!-- Akreditasi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akreditasi"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/etAkreditasi"
+                android:hint="Akreditasi"
+                android:background="@drawable/bg_edit_text"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp" />
+
+            <!-- Informasi Sekolah -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi Sekolah"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/etInformasi"
+                android:hint="Informasi Sekolah"
+                android:background="@drawable/bg_edit_text"
+                android:padding="10dp"
+                android:gravity="start"
+                android:inputType="textMultiLine" />
+
+            <!-- Tombol Tambah -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnTambahSekolah"
+                android:text="Tambah"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/orange2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

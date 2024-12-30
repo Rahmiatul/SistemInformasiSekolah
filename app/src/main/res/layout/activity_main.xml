@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/orange"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo -->
+
+    <!-- Teks Deskripsi -->
+
+    <ImageView
+        android:id="@+id/imgLogoo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:text="Selamat datang di portal sekolah. Semua informasi terkait sekolah dapat diakses melalui aplikasi ini."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Tombol Login (Minimalis) -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/orange2"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Tombol Register (Minimalis) -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/hijau"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

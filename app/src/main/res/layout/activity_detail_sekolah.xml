@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".DetailSekolahActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- School Image -->
+        <ImageView
+            android:id="@+id/imgSekolah"
+            android:layout_width="match_parent"
+            android:layout_height="313dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sma1" />
+
+        <!-- School Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNamaSekolah"
+            android:text="Nama Sekolah"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black" />
+
+        <!-- School Phone Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoTelepon"
+            android:text="No. Telepon: 081374296444"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <!-- School Accreditation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAkreditasi"
+            android:text="Akreditasi: A"
+            android:textSize="16sp"
+            android:textColor="@color/orange2"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- School Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvInformasiSekolah"
+            android:text="Visi: Menjadi SMA Berprestasi, Berjiwa Spritual dan Peduli Lingkungan. Dengan indikator:
+            Sukses dlm bidang akademik dan non akademik.
+            Mengutamakan nilai keagamaan dal berprilaku.
+            Peduli dan cinta lingkungan."
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="6dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
